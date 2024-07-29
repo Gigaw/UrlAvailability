@@ -28,7 +28,7 @@ const useUrlAvailability = (url: string) => {
     });
     checkURL(url);
     return unsubscribe;
-  }, []);
+  }, [url]);
 
   return {
     isUrlAvailable,
